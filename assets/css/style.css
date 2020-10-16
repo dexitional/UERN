@@ -975,7 +975,7 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
   line-height: 20px;
   font-weight: 700;
   letter-spacing: 0.1em;
-  color: #2c80ff;
+  color: #882c48;
   text-transform: uppercase;
   border-bottom: none;
 }
@@ -3732,7 +3732,7 @@ select.select-sm {
   padding: 6px 15px;
 }
 .nav-tabs .nav-link.active {
-  color: #2c80ff;
+  color: #9b4e66;
 }
 .nav-tabs-line {
   margin: 0;
@@ -3760,18 +3760,21 @@ select.select-sm {
   position: relative;
 }
 .nav-tabs-line .nav-link:after {
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  content: "";
-  width: 0;
-  height: 2px;
-  background: #2c80ff;
-  transition: all 0.4s;
+  
+    position: absolute;
+    left: 0px;
+    bottom: -2px;
+    content: "";
+    width: 0px;
+    height: 4px;
+    background: rgb(154 76 101);
+    transition: all 0.4s ease 0s;
+
 }
 .nav-tabs-line .nav-link.active {
   cursor: default;
-  color: #2c80ff;
+  color: #8e3751;
+  font-weight: bolder;
 }
 .nav-tabs-line .nav-link.active:after {
   width: 100%;
@@ -7331,8 +7334,9 @@ select.select-sm {
     display: flex;
   }
   .chat-messages {
-    border-left: 1px solid #d2dde9;
-    border-right: 1px solid #d2dde9;
+    /* border-left: 1px solid #d2dde9; */
+    /* border-right: 1px solid #d2dde9; */
+    border: 2px dashed #9b4e66;
   }
   .chat-messages-icon {
     display: none;
@@ -10364,6 +10368,7 @@ p + .timeline-content-info {
 .navbar-menu > li > a {
   display: flex;
   align-items: center;
+  font-weight: bolder;
   font-size: 14px;
   line-height: 32px;
   padding: 12px 0;
@@ -10374,11 +10379,11 @@ p + .timeline-content-info {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 2px;
+  height: 4px;
   opacity: 0;
   width: 100%;
   content: "";
-  background: #4e1a16;
+  background: #882c48;
   transition: all 0.3s;
 }
 .navbar-menu > li .ikon {
